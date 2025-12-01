@@ -45,6 +45,13 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 16px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .logo {
@@ -53,6 +60,51 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #111827;
+}
+
+.nav-badge {
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  border: 1px solid #dbeafe;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 13px;
+  color: #4b5563;
+}
+
+.nav-links a {
+  padding: 4px 0;
+}
+
+.nav-links a:hover {
+  color: #111827;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-link-ghost {
+  font-size: 13px;
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+.nav-link-ghost:hover {
+  background: #f3f4f6;
+}
+
+.nav-cta {
+  padding-inline: 16px;
 }
 
 .tag-pill {
