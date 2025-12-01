@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>n8n – 내가 쓰는 노코드 자동화 비서</title>
+    <meta
+      name="description"
+      content="n8n으로 반복 업무를 자동화하고, 나만의 디지털 비서팀을 만들어 보세요."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="nav">
+      <div class="logo">n8n</div>
+      <nav class="nav-links">
+        <a href="#what">n8n이 뭐예요?</a>
+        <a href="#can-do">무엇을 할 수 있나요?</a>
+        <a href="#my-usecases">내 사용 사례</a>
+        <a href="#benefits">장점</a>
+        <a href="#who">추천 대상</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">노코드 자동화 비서</p>
+          <h1>
+            n8n,<br />
+            내가 쓰는 <span class="highlight">노코드 자동화 비서</span>
+          </h1>
+          <p class="hero-sub">
+            매일 반복되는 일을 n8n에게 맡기고,<br />
+            나는 더 중요한 일에 집중해요.
+          </p>
+          <div class="hero-actions">
+            <a href="#my-usecases" class="btn primary">어떻게 쓰는지 보기</a>
+            <a
+              href="https://github.com/habitree/n8n"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn secondary"
+            >
+              GitHub 저장소 열어보기
+            </a>
+          </div>
+          <p class="hero-footnote">
+            작은 자동화를 하나씩 쌓다 보면,<br />
+            어느새 <strong>나만의 “디지털 비서팀”</strong>이 생깁니다.
+          </p>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-card-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="hero-card-body">
+            <p class="card-title">예시 워크플로</p>
+            <ul>
+              <li>폼 응답 → Google Sheet 자동 기록</li>
+              <li>새로운 메모 → Notion 아이디어 인박스</li>
+              <li>데이터 집계 → 요약 리포트 Slack 알림</li>
+            </ul>
+            <p class="card-caption">
+              “사람이 매번 하면 아까운 일”을<br />
+              n8n이 대신 처리합니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 1. n8n이 뭐예요? -->
+      <section id="what" class="section">
+        <h2>1. n8n이 뭐예요?</h2>
+        <div class="section-grid">
+          <div class="section-main">
+            <p class="tag">노코드 워크플로 자동화 도구</p>
+            <p>
+              n8n은 다양한 서비스
+              <span class="mono">(구글시트, 노션, 슬랙, 이메일, API 등)</span>를
+              <strong>“블록(노드)”</strong>로 이어서
+              <strong>자동 작업 흐름</strong>을 만드는 플랫폼입니다.
+            </p>
+            <p>
+              Zapier처럼 자동화하지만, <strong>자유도·유연성은 훨씬 높고</strong><br />
+              필요하다면 <strong>자체 서버에 직접 설치</strong>해서 쓸 수도 있어요.
+            </p>
+          </div>
+          <div class="section-side">
+            <div class="pill">시각적 워크플로 빌더</div>
+            <div class="pill">서버 설치형 / 클라우드형</div>
+            <div class="pill">유연한 조건·분기 처리</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. n8n으로 할 수 있는 일 -->
+      <section id="can-do" class="section section-alt">
+        <h2>2. n8n으로 할 수 있는 일</h2>
+        <p class="section-intro">일반적인 기능 기준으로 이렇게 쓸 수 있어요.</p>
+
+        <div class="columns-3">
+          <div class="card">
+            <h3>반복 작업 자동화</h3>
+            <p>
+              정기 리포트 발송, 데이터 수집, 알림 보내기 등<br />
+              사람이 매번 손으로 하던 일을 n8n이 대신 처리합니다.
+            </p>
+          </div>
+          <div class="card">
+            <h3>앱과 앱 연결하기 (Integration Hub)</h3>
+            <p>
+              Notion ↔ Google Sheets, Email ↔ Slack,<br />
+              Webhook ↔ 내부 시스템 등
+              <strong>서로 안 맞는 서비스들을 이어주는 허브</strong>로 씁니다.
+            </p>
+          </div>
+          <div class="card">
+            <h3>데이터 가공 & 변환</h3>
+            <p>
+              JSON, CSV, 텍스트를 다듬고<br />
+              <strong>“원하는 형태로 바꿔서”</strong> 다음 단계로 넘깁니다.
+            </p>
+          </div>
+        </div>
+
+        <div class="logic-card">
+          <h3>조건/분기 처리도 시각적으로</h3>
+          <p>
+            <strong>“이 값이면 A로, 아니면 B로”</strong> 같은 간단한 로직을<br />
+            코드 대신 <strong>눈에 보이는 플로우 차트</strong>로 설계합니다.
+          </p>
+        </div>
+      </section>
+
+      <!-- 3. 내가 실제로 n8n으로 하는 작업들 -->
+      <section id="my-usecases" class="section">
+        <h2>3. 내가 실제로 n8n으로 하는 작업들</h2>
+        <p class="section-intro">
+          Trevari에서 쓰는 방식처럼, <strong>“내 사용 사례”</strong>에 초점을 맞췄어요.
+        </p>
+
+        <div class="usecase-list">
+          <article class="usecase">
+            <h3>📚 독서/습관 기록 자동화</h3>
+            <ul>
+              <li>읽은 책/습관 기록을 폼이나 메시지로 받으면 → Google Sheet/Notion에 자동 저장</li>
+              <li>하루/주간 단위로 읽기·습관 진행 상황을 모아서 요약 정리</li>
+            </ul>
+          </article>
+
+          <article class="usecase">
+            <h3>🧠 콘텐츠 & 아이디어 관리</h3>
+            <ul>
+              <li>메모한 아이디어를 자동으로 Notion 데이터베이스로 수집</li>
+              <li>태그/날짜를 붙여서 나중에 검색·분석하기 좋게 정리</li>
+            </ul>
+          </article>
+
+          <article class="usecase">
+            <h3>📊 데이터 모으기 & 리포트 알림</h3>
+            <ul>
+              <li>여러 소스(시트, API, 설문 등)의 데이터를 한 곳으로 모아서 요약 정리</li>
+              <li>요약 결과를 이메일이나 Slack으로 나에게 자동 알림</li>
+            </ul>
+          </article>
+
+          <article class="usecase">
+            <h3>🛠️ “사람이 매번 하면 아까운 일” 자동화</h3>
+            <ul>
+              <li>단순 복사·붙여넣기, 파일 옮기기, 상태 업데이트 등</li>
+              <li>손으로 하면 귀찮은 일들을 n8n이 백그라운드에서 처리</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- 4. n8n을 쓰면서 느낀 장점 -->
+      <section id="benefits" class="section section-alt">
+        <h2>4. n8n을 쓰면서 느낀 장점</h2>
+        <div class="benefit-grid">
+          <div class="benefit">
+            <h3>코드를 깊게 몰라도 OK</h3>
+            <p>
+              완전 비개발자여도, <strong>꽤 복잡한 자동화</strong>까지 만들 수 있어요.<br />
+              필요할 때만 조금씩 스크립트를 더하는 방식이 가능합니다.
+            </p>
+          </div>
+          <div class="benefit">
+            <h3>나만의 디지털 비서팀</h3>
+            <p>
+              작은 자동화를 하나씩 쌓다 보면<br />
+              <strong>“나만의 디지털 비서팀”</strong>을 고용한 느낌이 듭니다.
+            </p>
+          </div>
+          <div class="benefit">
+            <h3>시간이 지날수록 쌓이는 자산</h3>
+            <p>
+              한 번 잘 만들어둔 워크플로는<br />
+              시간이 갈수록 <strong>내 시간을 벌어주는 자산</strong>이 됩니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. 이런 분들께 특히 추천 -->
+      <section id="who" class="section">
+        <h2>5. 이런 분들께 특히 추천</h2>
+        <div class="who-cards">
+          <div class="who-card">
+            <p>“매일 비슷한 일을 반복한다”고 느끼는 분</p>
+          </div>
+          <div class="who-card">
+            <p>노션 / 구글시트 / 슬랙 / 이메일을 자주 쓰는 분</p>
+          </div>
+          <div class="who-card">
+            <p>기록·콘텐츠·데이터를 체계적으로 관리하고 싶은 분</p>
+          </div>
+        </div>
+
+        <div class="cta-box">
+          <p>
+            나에게 맞는 자동화 아이디어가 궁금하다면,<br />
+            <strong>“지금 하는 반복 업무”</strong>를 한 번만 적어보세요.
+          </p>
+          <a href="mailto:hello@your-domain.com" class="btn primary">
+            내 업무, n8n으로 자동화 상담받기
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© 2025 n8n · 내가 쓰는 노코드 자동화 비서</span>
+    </footer>
+  </body>
+</html>
